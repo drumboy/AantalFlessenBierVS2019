@@ -37,6 +37,7 @@
             this.lblOutputRestFlessenBier = new System.Windows.Forms.Label();
             this.lblAantalSixPacks = new System.Windows.Forms.Label();
             this.lblOutputAantalSixPacks = new System.Windows.Forms.Label();
+            this.lblCopyright = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblAantalFlessenBier
@@ -120,11 +121,21 @@
             this.lblOutputAantalSixPacks.TabIndex = 8;
             this.lblOutputAantalSixPacks.Text = "0";
             // 
+            // lblCopyright
+            // 
+            this.lblCopyright.AutoSize = true;
+            this.lblCopyright.Location = new System.Drawing.Point(17, 173);
+            this.lblCopyright.Name = "lblCopyright";
+            this.lblCopyright.Size = new System.Drawing.Size(187, 13);
+            this.lblCopyright.TabIndex = 9;
+            this.lblCopyright.Text = "Copyright to Laurens Bourgeois - 2021";
+            // 
             // frmAantalBakkenBier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(411, 171);
+            this.ClientSize = new System.Drawing.Size(411, 198);
+            this.Controls.Add(this.lblCopyright);
             this.Controls.Add(this.lblOutputAantalSixPacks);
             this.Controls.Add(this.lblAantalSixPacks);
             this.Controls.Add(this.lblOutputRestFlessenBier);
@@ -134,8 +145,8 @@
             this.Controls.Add(this.btnBerekenAantalBakkenBier);
             this.Controls.Add(this.txtAantalFlessenBier);
             this.Controls.Add(this.lblAantalFlessenBier);
-            this.MaximumSize = new System.Drawing.Size(427, 210);
-            this.MinimumSize = new System.Drawing.Size(427, 210);
+            this.MaximumSize = new System.Drawing.Size(427, 237);
+            this.MinimumSize = new System.Drawing.Size(427, 237);
             this.Name = "frmAantalBakkenBier";
             this.Text = "Bereken Aantal Bakken Bier (VS 2019)";
             this.Load += new System.EventHandler(this.frmAantalBakkenBier_Load);
@@ -155,6 +166,7 @@
         private System.Windows.Forms.Label lblOutputRestFlessenBier;
         private System.Windows.Forms.Label lblAantalSixPacks;
         private System.Windows.Forms.Label lblOutputAantalSixPacks;
+        private System.Windows.Forms.Label lblCopyright;
     }
 }
 
